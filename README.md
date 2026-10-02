@@ -219,6 +219,12 @@ literal `Repository root/` directory and every manifest path misses.
 is being rejected before it reaches authentication. Report it to the Breakthrough team
 rather than regenerating tokens.
 
+**"Couldn't register with Breakthrough's sign-in service."** The client tried to register
+itself with our sign-in service, which we do not allow — it should be using the client id the
+plugin ships. Plugin 0.20.2 and later declare it, so updating fixes this. To connect without
+updating, or when adding the MCP server on its own, open the connector's settings and enter
+`breakthrough-mcp` as the **OAuth Client ID**; leave the client secret empty, there is none.
+
 **Every tool returns `{"status": "skipped", "reason": "missing_or_invalid_license_context"}`.**
 The session is not authenticated against Breakthrough. Confirm with `whoami` — the
 returned `license_id` will be missing.

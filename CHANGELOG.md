@@ -11,6 +11,18 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.20.2] - 2026-10-02
+
+### Fixed
+
+- Connecting no longer fails on a fresh install. `.mcp.json` now declares the OAuth client
+  id (`breakthrough-mcp`, a public client using PKCE) and the scopes it needs, so the client
+  has nothing left to discover. Without it, a client with no credentials falls back to
+  dynamic client registration, which our sign-in service refuses by design — the first thing
+  a new user did produced "Couldn't register with Breakthrough's sign-in service", with the
+  client id published only on the website and only in the section for people connecting the
+  MCP server without the plugin.
+
 ## [0.20.1] - 2026-09-25
 
 ### Fixed
