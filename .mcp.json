@@ -2,7 +2,11 @@
   "mcpServers": {
     "breakthrough": {
       "type": "http",
-      "url": "https://mcp.breakthroughsales.io/mcp"
+      "url": "https://mcp.breakthroughsales.io/mcp",
+      "oauth": {
+        "clientId": "breakthrough-mcp",
+        "scopes": "openid profile email offline_access"
+      }
     }
   }
 }
