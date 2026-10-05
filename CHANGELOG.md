@@ -11,6 +11,17 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.21.0] - 2026-10-05
+
+### Breaking
+
+- The connector shows as **Breakthrough** instead of **breakthrough**. claude.ai and Cursor
+  name the connector after the server key in the plugin's MCP config, which was lowercase.
+  Renaming the key changes Claude Code's tool names from
+  `mcp__plugin_breakthrough_breakthrough__*` to `mcp__plugin_breakthrough_Breakthrough__*`,
+  so permission rules naming the old tools stop matching. On claude.ai an existing
+  connection may need connecting again.
+
 ## [0.20.2] - 2026-10-02
 
 ### Fixed
