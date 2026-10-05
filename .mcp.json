@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "breakthrough": {
+    "Breakthrough": {
       "type": "http",
       "url": "https://mcp.breakthroughsales.io/mcp",
       "oauth": {
