@@ -11,6 +11,20 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.21.1] - 2026-10-06
+
+### Fixed
+
+- Ready for Anthropic's plugin directory. `plugin.json` now declares its privacy policy,
+  support, documentation and terms-of-service links, and its homepage is
+  breakthroughsales.io rather than this repository. The description no longer names other
+  assistants (in the Claude, marketplace and Cursor manifests), and the `crm` keyword is
+  gone (Breakthrough isn't a CRM).
+- `gather-context` says "use `company.id` as `business_id`" instead of "pass `company.id`",
+  which the directory's scanner read as a password.
+- The README no longer says the plugin only reads: it can add or update contacts when you
+  ask.
+
 ## [0.21.0] - 2026-10-05
 
 ### Breaking

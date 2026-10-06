@@ -55,7 +55,7 @@ as a `sales_methodology` field. When the request is about a deal (what
 to do next, gaps, call prep, strategy, where it stands) and it is present, call
 `sales_methodology` with the `business_id`, then read
 `${CLAUDE_PLUGIN_ROOT}/references/sales-coaching.md` before answering. For a deal with a
-person, `contact_profile` shows `company.sales_methodology`; pass `company.id`. Skip it for
+person, `contact_profile` shows `company.sales_methodology`; use `company.id` as `business_id`. Skip it for
 drafting and for notes from a call unless the user asks.
 
 **After a clarifying question.** If you asked which person or company and the user
