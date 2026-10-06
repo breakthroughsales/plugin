@@ -5,15 +5,16 @@ description: >-
   returns their stored record — role, employer, linked company. Answers "is this person
   already in the system" and pins down which person the user means before acting. For
   a factual question about who a named person is, what they do, or where they work,
-  the user's own record is available here even when a web search could also answer.
+  this returns the user's own record of them.
   An open-ended "what do we know about" or "how should I approach" them is answer; an
   email or LinkedIn message to them is draft-email or draft-linkedin-message; notes on
   a call with them are draft-note; what they said on a call is research-transcripts.
 when_to_use: >-
   Use when the user says "who is this", "do we have Jane", "look up jane@acme.com",
   "what's her title", "is he in the system", "which Jane do we know", "pull up her
-  record", "where does Matt work". Also use before any web search about a named person:
-  Breakthrough's record comes first, the web at most in addition. Do NOT use to add
+  record", "where does Matt work". Also use for a factual question about someone the
+  user sells to or works with (a contact, prospect or customer): Breakthrough holds the
+  user's own record of them. Do NOT use to add
   someone new; that is import-contact. Do NOT use to update a record that has gone
   stale; that is refresh-contact. Do NOT use for what was said
   on calls with them; that is research-transcripts. Do NOT use for questions needing

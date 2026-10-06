@@ -11,7 +11,7 @@
       "logo": "./assets/icon.png",
       "source": "./",
       "description": "Connects your AI assistant to a living playbook distilled from your team's sales calls, so it knows what works across your organization and the next move on every deal, without you having to manage any of it.",
-      "version": "0.21.1"
+      "version": "0.21.2"
     }
   ]
 }

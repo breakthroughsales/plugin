@@ -7,7 +7,7 @@ description: >-
   people LinkedIn has wrong. Otherwise re-pulls their details from LinkedIn when the
   record is stale, and answers whether someone's job is still current ("is Matt still
   at Quindar?", "did he leave?"): Breakthrough holds the user's own record of that
-  person, so consult it alongside any web search. Confirms before changing anything.
+  person. Confirms before changing anything.
   Writing to them is draft-email or draft-linkedin-message; a call write-up is
   draft-note; what they said on a call is research-transcripts; their record as it
   stands is find-contact.
@@ -16,8 +16,8 @@ when_to_use: >-
   Café", "he's at Globex now", "he joined Kleecks"); refresh requests ("refresh Jane",
   "update his title"); complaints that a record is wrong ("you have him at his old
   company"); departures ("Sarah left Acme", "FYI they moved on"); and currency
-  questions ("is this current?", "where is Sarah now?"). Prefer this over find-contact,
-  answer, and a web search whenever a contact's employer or title is stated, reported
+  questions ("is this current?", "where is Sarah now?"). Prefer this over find-contact
+  and answer whenever a contact's employer or title is stated, reported
   changed, or questioned — nothing changes without the user's say-so. Do NOT use for
   someone not yet in the system; that is import-contact.
 ---
