@@ -1,6 +1,6 @@
 {
   "name": "breakthrough",
-  "description": "Connects your AI assistant (like Claude, Codex or Cursor) to a living playbook distilled from your sales calls, so it always has the right context and knows what works best across your organization, without you having to manage any of it yourself.",
+  "description": "Connects your AI assistant to a living playbook distilled from your team's sales calls, so it knows what works across your organization and the next move on every deal, without you having to manage any of it.",
   "logo": "./assets/icon.png",
   "mcpServers": {
     "Breakthrough": {

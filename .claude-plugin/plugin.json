@@ -2,19 +2,24 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "breakthrough",
   "displayName": "Breakthrough",
-  "version": "0.21.0",
-  "description": "Connects your AI assistant (like Claude, Codex or Cursor) to a living playbook distilled from your sales calls, so it always has the right context and knows what works best across your organization, without you having to manage any of it yourself.",
+  "version": "0.21.1",
+  "description": "Connects your AI assistant to a living playbook distilled from your team's sales calls, so it knows what works across your organization and the next move on every deal, without you having to manage any of it.",
   "author": {
     "name": "Breakthrough"
   },
   "repository": "https://github.com/breakthroughsales/plugin",
-  "homepage": "https://github.com/breakthroughsales/plugin",
+  "homepage": "https://www.breakthroughsales.io",
+  "documentationUrl": "https://www.breakthroughsales.io/mcp",
+  "supportUrl": "mailto:support@breakthroughsales.io",
+  "privacyPolicyUrl": "https://www.breakthroughsales.io/privacy",
+  "termsOfServiceUrl": "https://app.breakthroughsales.io/terms-and-conditions",
   "license": "MIT",
   "keywords": [
     "sales",
     "breakthrough",
     "mcp",
-    "crm"
+    "sales-playbook",
+    "meddpicc"
   ],
   "interface": {
     "displayName": "Breakthrough",
