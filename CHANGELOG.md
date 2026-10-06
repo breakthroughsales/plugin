@@ -11,6 +11,16 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.21.2] - 2026-10-06
+
+### Fixed
+
+- `find-contact` and `refresh-contact` no longer rank web search below Breakthrough
+  ("Breakthrough's record comes first, the web at most in addition", "prefer this over …
+  a web search"). Anthropic's directory policy bars skill text that interferes with
+  Claude's other tools; both skills now say what Breakthrough holds instead. Skill
+  routing is unchanged (12/13 before and after, 3 runs each).
+
 ## [0.21.1] - 2026-10-06
 
 ### Fixed
