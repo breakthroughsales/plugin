@@ -8,7 +8,7 @@ when_to_use: >-
   Use when the user says "what did they say about pricing", "did we discuss budget",
   "when did we last talk to Acme", "what were their objections", "pull up that call",
   "did they commit to anything", "who was on the call", "did it come up". Do NOT use to
-  write the call up as a document; that is draft-note. Do NOT use for questions needing
+  write the call up as notes or a MEDDPICC; that is answer. Do NOT use for questions needing
   judgment beyond what the calls actually state; that is answer.
 ---
 

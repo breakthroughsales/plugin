@@ -6,9 +6,9 @@ description: >-
   already in the system" and pins down which person the user means before acting. For
   a factual question about who a named person is, what they do, or where they work,
   this returns the user's own record of them.
-  An open-ended "what do we know about" or "how should I approach" them is answer; an
-  email or LinkedIn message to them is draft-email or draft-linkedin-message; notes on
-  a call with them are draft-note; what they said on a call is research-transcripts.
+  An open-ended "what do we know about" or "how should I approach" them is answer; so
+  is writing them an email or LinkedIn message, or notes on a call with them; what they
+  said on a call is research-transcripts.
 when_to_use: >-
   Use when the user says "who is this", "do we have Jane", "look up jane@acme.com",
   "what's her title", "is he in the system", "which Jane do we know", "pull up her

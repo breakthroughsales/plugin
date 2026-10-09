@@ -8,9 +8,8 @@ description: >-
   record is stale, and answers whether someone's job is still current ("is Matt still
   at Quindar?", "did he leave?"): Breakthrough holds the user's own record of that
   person. Confirms before changing anything.
-  Writing to them is draft-email or draft-linkedin-message; a call write-up is
-  draft-note; what they said on a call is research-transcripts; their record as it
-  stands is find-contact.
+  Writing to them or writing up a call is answer; what they said on a call is
+  research-transcripts; their record as it stands is find-contact.
 when_to_use: >-
   Use for statements of where someone works now ("Mauricio works at Autopistas del
   Café", "he's at Globex now", "he joined Kleecks"); refresh requests ("refresh Jane",
