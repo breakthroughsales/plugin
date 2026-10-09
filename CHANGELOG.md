@@ -11,6 +11,20 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.22.0] - 2026-10-09
+
+### Breaking
+
+- Removed `draft-email`, `draft-linkedin-message`, `draft-note`, and `humanize`. Side-by-side
+  runs on claude.ai (same prompts, plugin on and off, connector on) showed the assistant
+  writes these as well on its own from the same Breakthrough context, and in its own
+  formats (email card, Docs), while the skills added little beyond a length cap.
+  Requests to write an email, a LinkedIn message, or call notes now go to `answer`, which
+  loads the context, reads the call when the request is about one, and leaves the
+  writing to the assistant.
+- Skill routing (3 runs each): the follow-up email and
+  MEDDPICC write-up prompts route to `answer` 3/3; the other routing cases are unchanged.
+
 ## [0.21.2] - 2026-10-06
 
 ### Fixed

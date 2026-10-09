@@ -3,7 +3,7 @@ name: gather-context
 description: >-
   Shared subroutine that loads the Breakthrough context behind a request — resolves
   which contacts, companies, and recorded calls are in scope, then retrieves the
-  relevant sales playbook sections. The drafting and answering skills each run this
+  relevant sales playbook sections. The answering skill runs this
   first, so it is not selected on its own; invoke it directly only to preload
   everything known about an account before a working session.
 disable-model-invocation: true
@@ -11,7 +11,7 @@ disable-model-invocation: true
 
 # Gather Breakthrough context
 
-The prelude every drafting and answering skill runs before it produces anything:
+The prelude the answering skill runs before it produces anything:
 resolve the entities in scope, then pull the evidence and playbook behind them.
 
 Read `${CLAUDE_PLUGIN_ROOT}/references/context-assembly.md` for the voice, length, and

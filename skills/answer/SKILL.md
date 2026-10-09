@@ -6,7 +6,8 @@ description: >-
   competitor, what to do next on a deal — plus open-ended questions about a prospect,
   account, or call. Answers come from the company's own playbook and sales data
   (contacts, companies, call transcripts), which only this skill can reach. The
-  fallback for any Breakthrough request that isn't a record lookup or a written artifact.
+  fallback for any Breakthrough request that isn't a record lookup, including writing
+  an email, a message, or call notes.
 when_to_use: >-
   Use for ANY question about selling that the user's company would answer differently
   from a generic one — even when no person, company, or call is named: "what's our
@@ -16,8 +17,10 @@ when_to_use: >-
   keeps a playbook for exactly these; answering them from general sales knowledge is
   the failure this skill exists to prevent. Do NOT use to pull up one person or company
   record; that is find-contact or find-business. Do NOT use for "what did they say on
-  the call"; that is research-transcripts. Do NOT use when the user wants something
-  written to send or save; that is draft-email, draft-linkedin-message, or draft-note.
+  the call"; that is research-transcripts. Also use when the user wants something
+  written from their calls or records — "write a follow-up email to Jane after our
+  call", "draft a LinkedIn message to him", "write up yesterday's call as a MEDDPICC":
+  load the context here, then write it the way you normally would.
 ---
 
 # Answer a question
@@ -60,6 +63,15 @@ cheap and never prompts.
   no "let me know if you need anything else."
 - State each point once.
 - Markdown.
+
+## Writing something
+
+When the user asks for an email, a LinkedIn message, or call notes, gather the context as
+above, then write it in your usual format. If it is about a call (notes on it, a
+follow-up to it), read that call with `call_transcript_conversation` first; listing the
+call or reading `<PastCallNotes>` is not reading it. Every specific in the draft should
+come from what you retrieved; leave a placeholder for anything you don't have, such as
+the user's availability. Nothing is sent: the user sends it.
 
 ## Web search
 

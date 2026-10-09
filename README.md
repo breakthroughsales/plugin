@@ -118,17 +118,13 @@ one.
 
 Your assistant selects these from your request, so you rarely need to type one. Command
 names differ by surface: in Claude Desktop and claude.ai they are unprefixed
-(`/draft-email`), while Claude Code namespaces them per plugin
-(`/breakthrough:draft-email`).
+(`/answer`), while Claude Code namespaces them per plugin
+(`/breakthrough:answer`).
 
 | Skill | What it does | Backing tools |
 | --- | --- | --- |
 | `gather-context` | shared prelude: resolve entities, pull evidence and playbook | `whoami`, `resolve_prompt_context`, `contact_profile`, `business_profile`, transcript tools, `sales_playbook` |
-| `draft-email` | writes a sales email | via gather-context |
-| `draft-linkedin-message` | writes a LinkedIn connection request, InMail, or DM | via gather-context |
-| `draft-note` | writes up a call — notes, debrief, MEDDPICC, BANT | via gather-context |
-| `answer` | answers questions needing judgment across the data | via gather-context |
-| `humanize` | strips the patterns that make writing read as machine-generated; runs automatically on every outbound draft | none |
+| `answer` | answers questions needing judgment across the data, and gathers the context for anything you ask the assistant to write (an email, a LinkedIn message, call notes) | via gather-context |
 | `find-contact` | looks up one person | `contact_profile` |
 | `find-business` | looks up one company | `business_profile` |
 | `research-transcripts` | searches and reads call transcripts | `search_transcripts`, `contact_transcripts_list`, `call_transcript_conversation` |
@@ -140,8 +136,8 @@ literal trigger phrasings and explicit hand-offs to its siblings — a descripti
 describes itself competes with every neighbour.
 
 `gather-context` is the exception: it sets `disable-model-invocation: true`. It's a
-subroutine the drafting and answering skills run first, not something a user asks for,
-and leaving it auto-selectable made it compete with all nine others on every
+subroutine the answering skill runs first, not something a user asks for,
+and leaving it auto-selectable made it compete with every other skill on each
 prospect-related request. You can still run it directly to preload an account before a
 working session.
 
@@ -153,9 +149,8 @@ create and save Breakthrough Documents. Drafts go to your conversation or to loc
 
 Web search uses the assistant's own built-in search.
 
-**Output is Markdown for every document type**, including emails, LinkedIn messages, and
-notes, which the app renders as HTML. See the deviation note in
-[`references/output-contracts.md`](references/output-contracts.md).
+Emails, LinkedIn messages, and call notes are written by your assistant in its own
+formats, from the context the plugin loads. Nothing is ever sent on your behalf.
 
 ## Authentication
 
