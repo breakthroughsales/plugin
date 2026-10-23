@@ -11,6 +11,16 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.23.0] - 2026-10-22
+
+### Changed
+
+- New starter prompts, shown on the plugin's page and in a new chat in ChatGPT/Codex. They
+  now all draw on the playbook or the Deal Scorecard: "Prep me for my next call using our
+  playbook", "Give me a review of how this deal is progressing and my blind spots", and
+  "How do I handle the objection from my last call?" (were: a follow-up email, the open
+  questions on an account, a LinkedIn message).
+
 ## [0.22.0] - 2026-10-09
 
 ### Breaking
