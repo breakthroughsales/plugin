@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "breakthrough",
   "displayName": "Breakthrough",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "description": "Connects your AI assistant to a living playbook distilled from your team's sales calls, so it knows what works across your organization and the next move on every deal, without you having to manage any of it.",
   "author": {
     "name": "Breakthrough"
@@ -32,9 +32,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Draft a follow-up email after my last call",
-      "What are the open questions on this account?",
-      "Write a LinkedIn message to this prospect"
+      "Prep me for my next call using our playbook",
+      "Give me a review of how this deal is progressing and my blind spots",
+      "How do I handle the objection from my last call?"
     ],
     "websiteURL": "https://breakthroughsales.io",
     "composerIcon": "./assets/icon.png",
