@@ -11,6 +11,14 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.24.0] - 2026-10-23
+
+### Changed
+
+- `import_contact` returns as soon as the contact exists instead of also waiting for its
+  fit result. `contact_without_fit_generating` means the fit is still running;
+  `contact_profile` shows it a minute or two later.
+
 ## [0.23.0] - 2026-10-22
 
 ### Changed
