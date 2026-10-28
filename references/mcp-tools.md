@@ -229,8 +229,10 @@ domain): if the user meant the company, it is already in Breakthrough (use
 An email-only import is held to the name the address carries: a vendor answer whose
 name contradicts `john.smith@…` is rejected rather than imported.
 
-Side effects: queues background enrichment against external data sources and polls for
-the new contact for up to ~90s. A slow return is normal.
+Side effects: queues background enrichment against external data sources and waits for
+the new contact for up to ~90s. A slow return is normal. It returns once the contact
+exists; `contact_without_fit_generating` means the fit result is still running, and
+`contact_profile` shows it when done.
 
 ### `refresh_contact(linkedin_url=None, email=None, query=None, user_requested=False, employer=None, employer_business_id=None, employer_change_kind=None, employer_since=None, apply_token=None, employer_website=None, contact_id=None)`
 

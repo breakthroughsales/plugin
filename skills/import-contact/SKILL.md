@@ -37,10 +37,11 @@ prompt is correct; do not tell the user to pre-approve it.
 ## What it does
 
 - Queues background enrichment against external data sources
-- Polls for Contact/FitResult creation for up to **~90 seconds**
+- Waits for the contact to be created, for up to **~90 seconds**, and returns then
+- The fit result keeps generating after it returns: `contact_without_fit_generating`
+  means it is still running; `contact_profile` shows it a minute or two later
 
-A long pause is expected. Don't retry a call that seems slow — you'll queue a second
-import.
+A pause is expected. Don't retry a call that seems slow — you'll queue a second import.
 
 ## Reporting
 
