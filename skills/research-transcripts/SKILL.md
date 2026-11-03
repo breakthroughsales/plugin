@@ -91,7 +91,7 @@ transcript bodies.
   the period the user asked about before reporting that there were no calls.
   Inventing a field name errors out rather than being ignored.
 - `tags` is what kind of call it is: `Sales`, `Internal`, `Onboarding`,
-  `Instructional`, … A question about prospects or customers means `tags:Sales`; a
+  `Customer Success`, … A question about prospects or customers means `tags:Sales`; a
   question about "my calls" in a window usually means `tags:!=Internal`. Every result
   carries its `tags`, so say which calls you left out and why.
 - `sort_by` — sort grammar. Defaults to `call_date:desc` on an empty query,

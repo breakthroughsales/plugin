@@ -11,6 +11,12 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.24.1] - 2026-11-03
+
+### Fixed
+
+- Call tag examples list `Customer Success` instead of the retired `Instructional` tag.
+
 ## [0.24.0] - 2026-10-23
 
 ### Changed

@@ -126,7 +126,7 @@ Semantic + keyword search across the org's call transcripts.
   | `participant_names` | string[] | any participant |
   | `business_names` | string[] | any business tied to the call |
   | `call_date` | int64 | a date as `YYYY-MM-DD` (a bare date covers the whole day, UTC) or unix seconds |
-  | `tags` | string[] | the call's tags: `Sales`, `Internal`, `Onboarding`, `Instructional`, … |
+  | `tags` | string[] | the call's tags: `Sales`, `Internal`, `Onboarding`, `Customer Success`, … |
 
 - `sort_by` — sort grammar. Defaults depend on `query`: with an empty query it
   sorts `call_date:desc` (newest first); with a query it sorts by relevance.
