@@ -156,14 +156,8 @@ formats, from the context the plugin loads. Nothing is ever sent on your behalf.
 
 **Normally** you sign in through the browser on first use. Nothing to configure.
 
-**Without a browser** — for automated or headless use, create an API key on the MCP API
-keys page in Breakthrough and register the server yourself:
-
-```bash
-claude mcp add --transport http --scope user breakthrough https://mcp.breakthroughsales.io/mcp --header "Authorization: Bearer $BREAKTHROUGH_MCP_API_KEY"
-```
-
-Keys are scoped to a single Breakthrough seat and can be revoked from the same page.
+**Without a browser** — for automated or headless setups, email
+support@breakthroughsales.io.
 
 ## Troubleshooting
 

@@ -11,6 +11,12 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.24.2] - 2026-11-04
+
+### Fixed
+
+- The README no longer shows a command that reads an API key from your machine. Sign-in is through the browser; for headless setups, contact support.
+
 ## [0.24.1] - 2026-11-03
 
 ### Fixed
