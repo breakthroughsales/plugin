@@ -11,6 +11,13 @@ change — the commonest case being `missing_or_invalid_license_context`, which 
 session is unauthenticated, not that the org has no data. Never report that one to the
 user as "no data found."
 
+`status: "no_account"` means something different: the user **is** signed in, but has no
+Breakthrough account yet, so every tool returns it. Show the user its `user_message`,
+which carries the `sign_up_url` link to create one, and stop. Do not retry until they
+say the account is set up; their connection then works without reconnecting.
+`status: "no_active_access"` means they were removed from their Breakthrough account:
+show its `user_message` (ask their admin to add them back) and stop.
+
 ## Read-only tools
 
 ### `whoami(detail="basic" | "full")`

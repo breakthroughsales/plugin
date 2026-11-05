@@ -20,7 +20,12 @@ web-search rules that come with this context. Read
 
 ## Sequence
 
-**1. Confirm scope.** Call `whoami`. If `license_id` is missing, stop — the session is
+**1. Confirm scope.** Call `whoami`. If it returns `status: "no_account"`, stop: the
+user is signed in but has no Breakthrough account yet. Show them its `user_message`,
+including the `sign_up_url` link, and do not call any other Breakthrough tool until they
+say the account is set up. If it returns `status: "no_active_access"`, they were
+removed from their Breakthrough account: show its `user_message` and stop. Otherwise, if
+`license_id` is missing, stop — the session is
 not authenticated and every other tool will return `skipped`. Tell the user to
 authenticate rather than reporting an empty result.
 

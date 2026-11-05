@@ -11,6 +11,12 @@ cut by hand. (1.0.0–1.3.0 were published under those numbers by mistake on
 
 ## [Unreleased]
 
+## [0.24.3] - 2026-11-05
+
+### Fixed
+
+- When you're signed in but don't have a Breakthrough account yet, the skills show you the sign-up link the tools return (`status: "no_account"`) and stop, instead of telling you to sign in again. If you were removed from your team, they tell you to ask your admin to add you back (`status: "no_active_access"`).
+
 ## [0.24.2] - 2026-11-04
 
 ### Fixed

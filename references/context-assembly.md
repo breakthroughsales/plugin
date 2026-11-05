@@ -70,8 +70,11 @@ Do **not** use it when:
 
 ## The retrieval sequence
 
-1. **`whoami()`** — confirm `license_id` is populated. If it is missing, stop and tell
-   the user to authenticate; every subsequent call scopes on it. The default
+1. **`whoami()`** — confirm `license_id` is populated. If it returns
+   `status: "no_account"`, stop and show the user its `user_message` with the
+   `sign_up_url` link: they are signed in but have no Breakthrough account yet. If
+   `license_id` is missing otherwise, stop and tell the user to authenticate; every
+   subsequent call scopes on it. The default
    `detail="basic"` reads only the access token, so this costs nothing.
 
    Pass **`detail="full"`** instead when the task turns on who the user *is* — writing
