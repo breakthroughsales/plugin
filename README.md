@@ -219,6 +219,11 @@ updating, or when adding the MCP server on its own, open the connector's setting
 The session is not authenticated against Breakthrough. Confirm with `whoami` — the
 returned `license_id` will be missing.
 
+**Every tool returns `{"status": "no_account"}`.** You signed in, but you don't have a
+Breakthrough account yet. Create one at the `sign_up_url` it gives you (your email is
+filled in), signing up with the same Google or Microsoft account you connected with.
+Then ask again; you don't need to reconnect.
+
 **Changed a skill and nothing happened.** Skill edits apply immediately. Changes to the
 plugin's server or manifest configuration need `/reload-plugins` or a restart.
 

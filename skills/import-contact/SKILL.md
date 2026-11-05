@@ -52,3 +52,8 @@ data will fill in, rather than presenting a partially-enriched record as final.
 
 If the result is `{"status": "skipped", "reason": "missing_or_invalid_license_context"}`,
 nothing was imported — that's an auth failure. Tell the user to authenticate.
+
+If the result is `{"status": "no_account"}`, nothing was imported: the user is signed in
+but has no Breakthrough account yet. Show them its `user_message`, with the
+`sign_up_url` link, and stop. On `{"status": "no_active_access"}`, show its
+`user_message` and stop.
